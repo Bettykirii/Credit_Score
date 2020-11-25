@@ -10,7 +10,9 @@
           Your financial literacy includes knowing  your CreditScore
         </h2>
   <div class="top-left">
-      <button class="btn">Check your scores</button>
+    <router-link to="/profiles" tag="button"><button class="btn">Check your scores</button></router-link>
+
+      
 
   </div>
 
