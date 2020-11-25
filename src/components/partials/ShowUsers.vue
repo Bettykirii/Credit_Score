@@ -1,12 +1,11 @@
 // vue-template.vue
 
 
-<template>
-  <div>
-    <table class="table table-striped table-bordered">
+<template functional>
+<div style="overflow-x:auto;">    
+  <table class="table table-striped table-bordered">
             <thead>
                 <tr>
-                    <th>Id</th>
 
                 <th>Name</th>
                 <th>Interest</th>
@@ -60,10 +59,10 @@ export default {
       usersList: []
     };
   },
-  mounted() {
+ mounted() {
     const proxyurl = "https://cors-anywhere.herokuapp.com/";
      const url = "https://rose-credit-card-api.herokuapp.com/creditCard";
-    fetch(proxyurl + url).then((res) => {
+   fetch(proxyurl + url).then((res) => {
           return res.json();
       }).then((users) => {
           this.usersList.push(...users);
@@ -78,13 +77,13 @@ export default {
  table {
   font-family: arial, sans-serif;
   border-collapse: collapse;
-  width: 100%;
+ 
 }
 
 td, th {
   border: 1px solid #dddddd;
   text-align: left;
-  padding: 8px;
+  padding: 4px;
 }
 
 tr:nth-child(even) {

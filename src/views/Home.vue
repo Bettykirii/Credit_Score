@@ -1,4 +1,4 @@
-<template>
+<template functional>
 <div class="home">
   <section class="hero is-dark">
     <div class="hero-body">
