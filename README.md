@@ -1,4 +1,4 @@
-# events-app
+# credit-score
 
 ## Project setup
 ```
